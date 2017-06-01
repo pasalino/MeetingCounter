@@ -1,0 +1,24 @@
+{
+  "name": "counter",
+  "version": "1.0.0",
+  "description": "Counter for meetup visitors",
+  "main": "source/server/server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon source/server/server.js"
+  },
+  "author": "Pasqualino de Simone pasalino@gmail.com",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^1.11.0"
+  },
+  "dependencies": {
+    "basic-auth": "^1.1.0",
+    "body-parser": "^1.17.2",
+    "cors": "^2.8.3",
+    "express": "^4.15.3",
+    "morgan": "^1.8.1",
+    "mustache-express": "^1.2.4",
+    "static-asset": "^0.6.0"
+  }
+}

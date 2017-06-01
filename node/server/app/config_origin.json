@@ -1,0 +1,35 @@
+{
+  "development": {
+    "server": {
+      "defaultPort": 3000,
+      "apiBasePath": "/api/v1",
+      "publicAsset": "./public"
+    },
+    "basicAuth": {
+      "username": "",
+      "password": ""
+    }
+  },
+  "test": {
+    "server": {
+      "defaultPort": 3000,
+      "apiBasePath": "/api/v1",
+      "publicAsset": "./public"
+    },
+    "basicAuth": {
+      "username": "",
+      "password": ""
+    }
+  },
+  "production": {
+    "server": {
+      "defaultPort": 8080,
+      "apiBasePath": "/api/v1",
+      "publicAsset": "./public"
+    },
+    "basicAuth": {
+      "username": "",
+      "password": ""
+    }
+  }
+}
