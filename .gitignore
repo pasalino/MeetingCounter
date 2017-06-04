@@ -107,3 +107,8 @@ com_crashlytics_export_strings.xml
 crashlytics.properties
 crashlytics-build.properties
 fabric.properties
+app/public/scripts/
+app/public/styles/
+app/sass/style.css
+app/sass/style.css.map
+node/package-lock.json
