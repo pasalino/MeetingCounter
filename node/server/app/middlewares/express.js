@@ -1,8 +1,14 @@
 'use strict';
 
+const bodyParser = require('body-parser');
+const cors = require('cors');
+
 module.exports = {
     HeaderMiddleware: function (app) {
-
+        //Header
+        app.use(bodyParser.urlencoded({extended: true}));
+        app.use(bodyParser.json());
+        app.use(cors());
     },
 
     FooterMiddleware: function (app) {
@@ -17,17 +23,23 @@ module.exports = {
 
             // respond with html page
             if (req.accepts('html')) {
-                res.render('404', {url: req.url});
+                res.render('common/404', {url: req.url});
                 return;
             }
+
 
             // default to plain-text. send()
             res.type('txt').send('Resource Not found');
         });
 
-        app.use(function (err, req, res) {
-            console.error(err.stack);
-            res.status(500).send('Something broke!');
+        app.use(function (err, req, res, next) {
+            res.locals.message = err.message;
+            res.locals.error = global.env === 'development' ? err : {};
+
+            // render the error page
+            res.status(err.status || 500);
+            res.render('common/500');
         });
     },
+
 };

@@ -1,7 +1,7 @@
 'use strict';
 
 module.exports = function (app) {
-    const visitorCounter = require('../controllers/visitorCounterController');
+    const visitorCounter = require('../controllers/meetingApiController');
     const {BasicAuth} = require('../../middlewares/auth');
     const base = global.config.server.apiBasePath + '/visitors';
 

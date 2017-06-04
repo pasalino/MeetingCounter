@@ -1,0 +1,10 @@
+extends ../layout
+
+block scripts
+    script(src='/scripts/meetings.js')
+
+block content
+    a(href="/meetings")
+        span.glyphicon.glyphicon-chevron-left Back
+    h1 #{meeting}
+    h2#visitors #{visitors}

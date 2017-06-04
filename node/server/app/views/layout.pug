@@ -1,0 +1,21 @@
+html
+    - var minify = ''
+    if global.env=="production"
+        - minify='.min'
+    head
+        meta(name='viewport' content ='width=device-width, initial-scale=1, user-scalable=no')
+        meta(charset='utf-8')
+        title Tartaruga Maori - #{title}
+
+        link(rel='stylesheet', href='/bootstrap/css/bootstrap' + minify + '.css')
+        link(rel='stylesheet', href='/styles/style.css')
+        block styles
+
+        script(src='/jquery/jquery' + minify + '.js')
+        script(src='/bootstrap/js/bootstrap' + minify + '.js')
+        block scripts
+        block head
+    body
+        div.container-fluid
+            div.row
+                block content

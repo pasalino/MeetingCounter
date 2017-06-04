@@ -1,0 +1,5 @@
+extends ../layout
+
+block content
+    each item in list
+        a(href="/meetings/" + item) #{item}

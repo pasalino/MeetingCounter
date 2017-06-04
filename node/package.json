@@ -2,10 +2,10 @@
   "name": "counter",
   "version": "1.0.0",
   "description": "Counter for meetup visitors",
-  "main": "source/server/server.js",
+  "main": "server/app/app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon source/server/server.js"
+    "start": "nodemon server/app/app.js"
   },
   "author": "Pasqualino de Simone pasalino@gmail.com",
   "license": "ISC",
@@ -14,11 +14,17 @@
   },
   "dependencies": {
     "basic-auth": "^1.1.0",
+    "bluebird": "^3.5.0",
     "body-parser": "^1.17.2",
+    "bootstrap": "^3.3.7",
     "cors": "^2.8.3",
     "express": "^4.15.3",
+    "jquery": "^3.2.1",
     "morgan": "^1.8.1",
-    "mustache-express": "^1.2.4",
-    "static-asset": "^0.6.0"
+    "node-sass-middleware": "^0.11.0",
+    "pug": "^2.0.0-rc.2",
+    "serve-favicon": "^2.4.3",
+    "static-asset": "^0.6.0",
+    "websocket": "^1.0.24"
   }
 }
