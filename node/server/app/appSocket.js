@@ -9,13 +9,13 @@ exports.SendUpdate = async (meeting) => {
         if (!(meeting in connections)) return;
         const visitors = await model.getTotalVisitorsInMeeting(meeting);
         Promise.filter(connections[meeting], (wsItem) => {
-            if (wsItem.ws.status !== wsItem.ws.CLOSED) {
-                wsItem.ws.send(JSON.stringify({command: "update", meeting, visitors}));
-                return true;
-            }
-        })
+            wsItem.ws.send(JSON.stringify({command: "update", meeting, visitors}));
+            console.log("ddd");
+            return true;
+        });
 
     } catch (err) {
+        console.log("ddd");
         throw err;
     }
 };
