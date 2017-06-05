@@ -9,7 +9,7 @@ exports.SendUpdate = async (meeting) => {
         if (!(meeting in connections)) return;
         const visitors = await model.getTotalVisitorsInMeeting(meeting);
         Promise.filter(connections[meeting], (wsItem) => {
-            if (wsItem.ws !== wsItem.ws.CLOSED) {
+            if (wsItem.ws.status !== wsItem.ws.CLOSED) {
                 wsItem.ws.send(JSON.stringify({command: "update", meeting, visitors}));
                 return true;
             }

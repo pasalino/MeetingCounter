@@ -9,7 +9,6 @@ $(() => {
     };
 
     ws.onmessage = function (event) {
-
         const data = JSON.parse(event.data);
         if (data.command === "update")
             $('#visitors').html(data.visitors);
