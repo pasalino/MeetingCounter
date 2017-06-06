@@ -7,12 +7,14 @@ module.exports = (app) => {
     app.use('/jquery', express.static('../../node_modules/jquery/dist/'));
     app.use('/bootstrap', express.static('../../node_modules/bootstrap/dist/'));
 
+    //Favicon
+    app.use(favicon(`${config.server.publicAsset}/img/favicon.png`));
+
+
     //Public assets
     app.use(staticAsset(global.config.server.publicAsset));
     app.use(express.static(global.config.server.publicAsset));
 
-    //Favicon
-    app.use(favicon(`${config.server.publicAsset}/img/favicon.png`));
 
     //Css Preprocessor
     sassConfigure(app);

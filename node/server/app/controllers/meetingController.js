@@ -8,7 +8,6 @@ module.exports = {
             const list = await model.getMeetingList();
             const context = {list};
             res.render(`${views}/list`, context);
-            res.json(response);
         } catch (err) {
             next(err);
         }
