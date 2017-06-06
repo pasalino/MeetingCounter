@@ -1,5 +1,8 @@
 extends ../layout
 
 block content
-    each item in list
-        a(href="/meetings/" + item) #{item}
+    h1 Meeting list
+    ul.list
+        each item in list
+            li.col-xs-12-col-md-4.col-centered.item-list
+                a(href="/meetings/" + item) #{item}

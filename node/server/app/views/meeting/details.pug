@@ -4,7 +4,7 @@ block scripts
     script(src='/scripts/meetings.js')
 
 block content
-    a(href="/meetings")
+    a.btn.btn-default(href="/meetings")
         span.glyphicon.glyphicon-chevron-left Back
     h1 #{meeting}
-    h2#visitors #{visitors}
+    span#visitors #{visitors}

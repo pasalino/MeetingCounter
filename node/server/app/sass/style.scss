@@ -1,8 +1,58 @@
-$background: #FFFFFF;
+$background: #303538;
+$text: #FFFFFF;
 $back_principal: #303538;
+$link: #ffcc00;
+$link_hover: #fcf64b;
 
 body {
   background-color: $background;
+  color: $text;
+  text-align: center;
+  margin-top: 30px;
 }
 
+a {
+  color: $link;
 
+  &:hover {
+    color: $link_hover;
+    text-decoration: none;
+  }
+}
+
+h1 {
+  text-transform: uppercase;
+  font-size: 30px;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.col-centered {
+  float: none;
+  margin: 0 auto;
+}
+
+ul.list:first-child {
+  border-top: 1px solid $text;
+}
+
+.item-list {
+  border-bottom: 1px solid $text;
+  font-size: 20px;
+  padding: 10px;
+
+}
+
+img#logo {
+  max-width: 100px;
+  margin-bottom: 20px;
+}
+
+span#visitors {
+  font-size: 100px;
+  color: $link;
+}
