@@ -1,13 +1,33 @@
-#
-install wifi WiFiEsp
+#Meeting Counter
+
+##Abstract
+Coming soon
+
+##Mission
+This project is created for [IoT meetup Milano](https://www.meetup.com/it-IT/IoT-Meetup-Milano/)
+
+[PoT - Tocca con mano quello che scrivi](https://www.meetup.com/it-IT/IoT-Meetup-Milano/events/240049140/)
+
+It's a basic example to use arduino with node.js REST and WebSocket
+
+##Electrical Scheme
+In docs there is an Electrical scheme for build a device
+Use Fritzing for open and look how connect all components
+
+###Components
+* Arduino uno
+* ESP8266 - Wifi
+* Coming soon
+
+##Usage
+
+Coming soon
+
+###Installation
+
+Coming soon
 
 
-Dash Counter per Meeting. Crea con Arduino un pulsante per le presenze dei meeting.
+###Dependences
 
-
-http://www.instructables.com/id/Cheap-Arduino-WiFi-Shield-With-ESP8266/
-
-
-https://github.com/bportaluri/WiFiEsp
-
-Ricordati di cambiare ESP8266 il rate
+Coming soon
