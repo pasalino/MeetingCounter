@@ -17,7 +17,7 @@ const char url[] = "/api/v1/visitors/meetingName"; //change meetingName
 //Use this tool: http://www.motobit.com/util/base64-decoder-encoder.asp
 String auth = "XXXXXXXXXXXXXX";
 char ssid[] = "SSID"; //name of ssid   
-char pass[] = "09AQ2GED"; //wifi password       
+char pass[] = "XXXX"; //wifi password       
 
 
 const int httpPort = 8080;
