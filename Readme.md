@@ -1,16 +1,16 @@
-#Meeting Counter
+# Meeting Counter
 
-##Abstract
+## Abstract
 Coming soon
 
-##Mission
+## Mission
 This project is created for [IoT meetup Milano](https://www.meetup.com/it-IT/IoT-Meetup-Milano/)
 
 [PoT - Tocca con mano quello che scrivi](https://www.meetup.com/it-IT/IoT-Meetup-Milano/events/240049140/)
 
 It's a basic example to use arduino with node.js REST and WebSocket
 
-##Electrical Scheme
+## Electrical Scheme
 In docs there is an Electrical scheme for build a device
 Use Fritzing for open and look how connect all components
 
@@ -19,15 +19,15 @@ Use Fritzing for open and look how connect all components
 * ESP8266 - Wifi
 * Coming soon
 
-##Usage
+## Usage
 
 Coming soon
 
-###Installation
+### Installation
 
 Coming soon
 
 
-###Dependences
+### Dependences
 
 Coming soon
