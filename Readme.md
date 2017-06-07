@@ -14,7 +14,7 @@ It's a basic example to use arduino with node.js REST and WebSocket
 In docs there is an Electrical scheme for build a device
 Use Fritzing for open and look how connect all components
 
-###Components
+### Components
 * Arduino uno
 * ESP8266 - Wifi
 * Coming soon
