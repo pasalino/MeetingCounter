@@ -42,6 +42,7 @@ List of scheme:
 
 ## Usage
 
+* Start with node ```cd node/server/app; node app.js```
 * Open meeting counter in web browser (optionally before click)
 * Click button for start service increment counter on server
 
