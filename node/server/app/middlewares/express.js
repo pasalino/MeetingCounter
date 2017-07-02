@@ -7,8 +7,6 @@ module.exports = {
     HeaderMiddleware: function (app) {
         //Header
         app.use(bodyParser.urlencoded({extended: true}));
-        app.use(bodyParser.json());
-        app.use(cors());
     },
 
     FooterMiddleware: function (app) {

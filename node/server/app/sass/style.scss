@@ -25,31 +25,28 @@ h1 {
   font-size: 30px;
 }
 
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
+img#logo {
+  max-width: 100px;
+  margin-bottom: 20px;
 }
 
-.col-centered {
+ul.list {
+  list-style-type: none;
+  padding: 0;
   float: none;
   margin: 0 auto;
+  margin-top: 20px;
 }
 
-ul.list:first-child {
+ul.list li.item-list:first-child {
   border-top: 1px solid $text;
 }
 
-.item-list {
+li.item-list {
   border-bottom: 1px solid $text;
   font-size: 20px;
   padding: 10px;
 
-}
-
-img#logo {
-  max-width: 100px;
-  margin-bottom: 20px;
 }
 
 span#visitors {

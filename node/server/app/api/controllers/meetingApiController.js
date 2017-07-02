@@ -1,9 +1,9 @@
 'use strict';
 const model = require('../../models/visitorCounterModel');
-const {SendUpdate} =require('../../appSocket');
-const {Promise} = require('bluebird');
+const {SendUpdate} = require('../../appSocket');
+
 module.exports = {
-    incrementVisitor:  async (req, res) => {
+    incrementVisitor: async (req, res) => {
         const meeting = req.params.meeting;
         console.log(`Increment meeting: ${meeting}`);
         try {
