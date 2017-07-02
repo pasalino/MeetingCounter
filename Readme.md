@@ -59,8 +59,8 @@ In server folder run command
 **Steps:**
 * Connect arduino without program on memory
 * Open serial monitor
-* Write AT command and wait responde OK
-* Write AT+CIOBAUD=9600 and change boundrate
+* Write ```AT``` command and wait responde OK
+* Write ```AT+CIOBAUD=9600``` and change boundrate
 
 **Check:**
 * Reboot arduino
@@ -77,9 +77,9 @@ In server folder run command
 * [Bluebird](http://bluebirdjs.com/docs/getting-started.html) 
 ## API AND WEB
 
-* Use user:pwd@server:port/meetings for list of meetings
-* Use PATCH METHOD and user:pwd@server:port/api/v1/visitors/[MeetingName] for add visitors on specific meeting
-* Use DELETE METHOD and user:pwd@server:port/api/v1/visitors/[MeetingName] for add clear users in meetings
+* Use ```user:pwd@server:port/meetings``` for list of meetings
+* Use PATCH METHOD and ```user:pwd@server:port/api/v1/visitors/[MeetingName]``` for add visitors on specific meeting
+* Use DELETE METHOD and ```user:pwd@server:port/api/v1/visitors/[MeetingName]``` for add clear users in meetings
 
 ### Next Step
 
