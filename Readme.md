@@ -1,7 +1,8 @@
 # Meeting Counter
 
 ## Abstract
-Coming soon
+This project is a subset of main project [Meeting Counter](https://github.com/pasalino/MeetingCounter) for [IoT meetup Milano](https://www.meetup.com/it-IT/IoT-Meetup-Milano/) community.  
+With Arduino and Node.js recreate a copy of Amazon Dash: one button for call a service.
 
 ## Mission
 This project is created for [IoT meetup Milano](https://www.meetup.com/it-IT/IoT-Meetup-Milano/)
@@ -21,7 +22,13 @@ List of scheme:
 ### Components
 * Arduino uno
 * ESP8266 - Wifi
-* Coming soon
+* 1 Red led diode
+* 1 Blue led diode
+* 1 switch
+* 1 10k Ohm Resistor
+* 1 220 Ohm Resistor
+* 1 100 Ohm Resistor
+
 
 ## Architecture
 * Arduino connect on Web with ESP8266. 
@@ -31,11 +38,16 @@ List of scheme:
 
 ## Usage
 
-Coming soon
+* Open meeting counter in web browser (optionally before click)
+* Click button for start service increment counter on server
+
 
 ### Installation
 
-Coming soon
+#### Node.js
+In server folder run command
+
+```npm install```
 
 #### ESP8266
 **Important!!!** Change ESP8266 bound rate from 115200 to 9600 for use this module.
@@ -53,13 +65,17 @@ Coming soon
 
 ## Dependences
 
-Coming soon
+### Arduino
+* [WifiEsp](https://github.com/bportaluri/WiFiEsp)
+* SoftwareSerial
 
+#### Node.js
+* [Bluebird](http://bluebirdjs.com/docs/getting-started.html) 
 ## API AND WEB
 
 * Use user:pwd@server:port/meetings for list of meetings
-* Use PATCH METHOD and user:pwd@server:port/api/v1/visitors/MeetingName for add visitors on specific meeting
-* Use DELETE METHOD and user:pwd@server:port/api/v1/visitors/MeetingName for add clear users in meetings
+* Use PATCH METHOD and user:pwd@server:port/api/v1/visitors/[MeetingName] for add visitors on specific meeting
+* Use DELETE METHOD and user:pwd@server:port/api/v1/visitors/[MeetingName] for add clear users in meetings
 
 ### Next Step
 
