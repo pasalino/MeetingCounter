@@ -57,7 +57,6 @@ void loop()
   long rssi = WiFi.RSSI();
 
   //Reconnect if disconnect
-  Serial.println(WiFi.status());
   if(WiFi.status()==WL_DISCONNECTED){
     Serial.println("Disconnected");
     connectWifi();
@@ -75,6 +74,7 @@ void restCall() {
     client.println("PATCH " + String(url) + " HTTP/1.1");
     client.println("Host: " + String(host));
     client.println("Authorization: Basic " + auth);
+    client.println("Content-Type: application/json");
     client.println("Connection: close");
     client.println();
 
